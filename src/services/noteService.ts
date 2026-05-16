@@ -64,7 +64,7 @@ export async function createNote(
 }
 
 export async function deleteNote(
-  id: number,
+  id: string,
 ): Promise<Note> {
   const response =
     await axiosInstance.delete<Note>(
